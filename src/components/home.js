@@ -1,7 +1,7 @@
 import React, { useReducer, useState } from 'react'
 import { initialState, reducer } from '../Redux/reducer';
 import { addTodo, deleteTodo, updateTodo } from '../Redux/actionCreator';
-import Todo from './todo';
+import Todo from './todo.js';
 
 
 const Home = () => {
