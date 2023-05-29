@@ -6,7 +6,7 @@ import Home from './components/home'
 
 const App = () => {
   return (
-    <div>
+    <div className="h-screen w-screen bg-gradient-to-r from-cyan-500 to-blue-500 ">
       <Home/>
     </div>
   )
