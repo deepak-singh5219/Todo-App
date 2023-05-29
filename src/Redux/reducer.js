@@ -2,7 +2,7 @@ import { ADD_TODO, DELETE_TODO, UPDATE_TODO } from "./actions";
 import { v4 as uuidv4 } from 'uuid';
 
 export const initialState = {
-    todos: [{}],
+    todos: [],
   };
 
 export const reducer = (state,action) => {
@@ -31,7 +31,7 @@ export const reducer = (state,action) => {
           }
         case DELETE_TODO:
           {
-            const idx = state.todos.findIndex(todo => todo.id === action.payload.todoId);
+            const idx = state.todos.findIndex((todo) => todo.id === action.payload.todoId);
             const todos = Object.assign([], state.todos);
             todos.splice(idx, 1);
             return {
