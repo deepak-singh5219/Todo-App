@@ -1,5 +1,4 @@
-import React, { useReducer } from 'react'
-import { initialState, reducer } from '../Redux/reducer'
+import React from 'react'
 import { deleteTodo, updateTodo } from '../Redux/actionCreator';
 
 
